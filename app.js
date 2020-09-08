@@ -155,7 +155,7 @@ if (
 function countNotification() {
     let field = document.getElementById('counter');
     let value = parseInt(field.innerText);
-    value = value++;
+    value++;
     field.innerText = value;
 }
 
