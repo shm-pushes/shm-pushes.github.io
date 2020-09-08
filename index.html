@@ -43,6 +43,11 @@
             <span id="info-message"></span>
         </div>
         <div class="row center">
+            <h5>
+                <span id="counter">0</span>
+            </h5>
+        </div>
+        <div class="row center">
             <h4 class="header col s12 light">Instance ID Token</h4>
             <p id="token" style="word-break: break-all;"></p>
         </div>
@@ -55,11 +60,11 @@
             <form action="" method="post" class="col s12" id="notification">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input type="text" name="title" id="title" value="Bubble Nebula" class="validate">
+                        <input type="text" name="title" id="title" value="title" class="validate">
                         <label for="title">Notification title</label>
                     </div>
                     <div class="input-field col s12">
-                        <input type="text" name="body" id="body" value="It's found today at 21:00" class="validate">
+                        <input type="text" name="body" id="body" value="message" class="validate">
                         <label for="body">Notification message</label>
                     </div>
                     <div class="input-field col s12" id="massage_row">

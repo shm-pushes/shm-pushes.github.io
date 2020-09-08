@@ -95,6 +95,7 @@ if (
             .append('<strong>'+payload.data.title+'</strong>')
             .append('<em>'+payload.data.body+'</em>')
         ;
+        countNotification();
 
         // register fake ServiceWorker for show notification on mobile devices
         navigator.serviceWorker.register('/firebase-messaging-sw.js');
@@ -149,6 +150,13 @@ if (
     console.log('Support postMessage', 'postMessage' in window);
 
     updateUIForPushPermissionRequired();
+}
+
+function countNotification() {
+    let field = document.getElementById('counter');
+    let value = parseInt(field.innerText);
+    value = value++;
+    field.innerText = value;
 }
 
 
